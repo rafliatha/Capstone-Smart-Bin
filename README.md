@@ -1,17 +1,15 @@
 # Smart Bin with Real-Time Automated Waste Sorting
 
-Proyek Capstone – Teknik Komputer, Universitas Negeri Semarang    
+Proyek Capstone – Teknik Komputer 2022, Universitas Negeri Semarang    
 Kelompok 15  
-Anggota : Muhammad Rafli Falam Athallah & Vacelnino Faiz Fadeli  
+Anggota    : Muhammad Rafli Falam Athallah & Vacelnino Faiz Fadeli  
 Pembimbing : Abdurrakhman Hamid Al-Azhari, M.T
 
----
 
 ## Deskripsi Proyek
 
 Smart Bin ini dirancang untuk memilah **sampah anorganik** (plastik dan logam) secara otomatis menggunakan kombinasi teknologi **YOLOv5** untuk klasifikasi visual dan **Arduino** sebagai pengendali aktuator serta sensor. Sistem bekerja secara real-time dan responsif untuk meningkatkan efisiensi pengelolaan limbah skala kecil.
 
----
 
 ## Teknologi & Tools
 
@@ -24,7 +22,6 @@ Smart Bin ini dirancang untuk memilah **sampah anorganik** (plastik dan logam) s
 | Komunikasi       | Serial UART Python ↔ Arduino                                              |
 | Tampilan         | OpenCV window + LED indikator (merah, kuning, hijau)                      |
 
----
 
 ## Dataset
 
@@ -39,16 +36,14 @@ Deskripsi :
 - Dua kelas dipilih : `PlasticBottle` dan `Metal Can`
 
 ### Preprocessing :
-- Ukuran citra diubah ke 640x640 px
-- Augmentasi: flipping, rotation, exposure
-- Split data: 80% training, 20% validation
+- Ukuran citra diubah ke 640 x 640 px
+- Augmentasi : flipping, rotation, exposure
+- Split data : 80% training, 20% validation
 - Training dilakukan menggunakan **YOLOv5s** di **Google Colab**
 
 **Hasil Training** :
-- mAP@0.5: **87.2%**
+- mAP@0.5 : **87.2%**
 - Model disimpan sebagai `best.pt`
-
----
 
 ## Arsitektur Sistem
 
@@ -58,8 +53,6 @@ Deskripsi :
 4. Arduino menggerakkan servo ke kompartemen yang sesuai.
 5. Sensor ultrasonik memantau kapasitas tempat sampah.
 6. LED menyala sesuai status (hijau → kosong, kuning → setengah, merah → penuh).
-
----
 
 ## Cara Menjalankan Sistem
 ### Python (Deteksi & Komunikasi)
@@ -77,22 +70,18 @@ python python-code/main.py
 1. Upload `smartbin.ino` ke board Arduino UNO.
 2. Pastikan koneksi ke sensor, LED, dan servo sudah sesuai wiring diagram.
 
----
-
 ### Pengembang
 Muhammad Rafli Falam Athallah – [rafliathallah17@students.unnes.ac.id]
-Program Studi Teknik Komputer, Universitas Negeri Semarang
 
----
+Program Studi Teknik Komputer, Universitas Negeri Semarang
 
 ### Lisensi
 Repositori ini dibagikan untuk keperluan akademik dan pembelajaran.
 Silakan gunakan dengan mencantumkan sumber.
 
----
-
 ### Tautan Penting
 Dataset Roboflow : [https://universe.roboflow.com/litter-e1hys/lit-zyvzb]
+
 YOLOv5 Documentation : [https://docs.ultralytics.com]
 
 ---
