@@ -172,3 +172,21 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Python
+*.pyc
+__pycache__/
+env/
+venv/
+
+# Model YOLO
+*.pt
+runs/
+
+# Arduino
+*.hex
+
+# OS & IDE
+.DS_Store
+.vscode/
+.idea/
