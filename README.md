@@ -83,5 +83,3 @@ Silakan gunakan dengan mencantumkan sumber.
 Dataset Roboflow : [https://universe.roboflow.com/litter-e1hys/lit-zyvzb]
 
 YOLOv5 Documentation : [https://docs.ultralytics.com]
-
----
