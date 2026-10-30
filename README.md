@@ -73,6 +73,8 @@ python python-code/main.py
 ### Pengembang
 Muhammad Rafli Falam Athallah – [rafliathallah17@students.unnes.ac.id]
 
+Vacelnino Faiz Fadeli
+
 Program Studi Teknik Komputer, Universitas Negeri Semarang
 
 ### Lisensi
